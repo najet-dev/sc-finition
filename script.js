@@ -1,11 +1,4 @@
-/* =====================================================
-   SC FINITION
-   SCRIPT.JS
-===================================================== */
-
-/* =====================================================
-   HEADER — SCROLL
-===================================================== */
+/* HEADER — SCROLL */
 
 const header = document.getElementById("header");
 
@@ -21,9 +14,7 @@ window.addEventListener("scroll", updateHeader);
 
 updateHeader();
 
-/* =====================================================
-   MOBILE MENU
-===================================================== */
+/*  MOBILE MENU */
 
 const menuToggle = document.getElementById("menuToggle");
 
@@ -47,9 +38,7 @@ navLinks.forEach((link) => {
   });
 });
 
-/* =====================================================
-   REVEAL ON SCROLL
-===================================================== */
+/* REVEAL ON SCROLL */
 
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -72,9 +61,7 @@ revealElements.forEach((element) => {
   observer.observe(element);
 });
 
-/* =====================================================
-   ACTIVE NAVIGATION
-===================================================== */
+/* ACTIVE NAVIGATION */
 
 const sections = document.querySelectorAll("section[id]");
 
@@ -109,9 +96,7 @@ function updateActiveNavigation() {
 
 window.addEventListener("scroll", updateActiveNavigation);
 
-/* =====================================================
-   CURRENT YEAR
-===================================================== */
+/* CURRENT YEAR */
 
 const year = document.getElementById("year");
 
@@ -119,9 +104,7 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-/* =====================================================
-   CLOSE MENU WITH ESCAPE
-===================================================== */
+/* CLOSE MENU WITH ESCAPE */
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
@@ -131,9 +114,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-/* =========================================
-   CARROUSEL AVIS CLIENTS
-========================================= */
+/* CARROUSEL AVIS CLIENTS */
 
 const reviewsCarousel = document.getElementById("reviewsCarousel");
 
